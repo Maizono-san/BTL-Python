@@ -6,7 +6,6 @@ window.geometry('950x550')
 window.title("Weather Forecast")
 icon = PhotoImage(file = 'icon.png')
 window.iconphoto(True,icon)
-window.config(background = '#26426a')
 window.resizable(False,False)
 
 #BackGroundImage
