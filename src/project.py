@@ -15,7 +15,7 @@ background_image = Label(window,
                          image = background)
 background_image.pack()
 
-# test
+
 
 #BackGroundGif
 # info = Image.open("images\\background.gif")
