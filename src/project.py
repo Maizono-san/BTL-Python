@@ -15,6 +15,27 @@ background_image = Label(window,
                          image = background)
 background_image.pack()
 
+# test
+
+#BackGroundGif
+# info = Image.open("images\\background.gif")
+# framnr = info.n_frames
+# frames = [PhotoImage(file="images\\background.gif",
+#                     format = 'gif -index %i' %(i)) for i in range(framnr)]
+
+# def update(ind):
+#       frame = frames[ind]
+#       ind += 1
+#       if ind > framnr - 1: 
+#          ind = 0
+#       Back_Ground_Gif.configure(image = frame)
+#       window.after(50, update, ind)
+    
+# Back_Ground_Gif = Label(window)
+# Back_Ground_Gif.pack()
+# window.after(50, update, 0)
+
+
 #SearchBar
 searchbar = PhotoImage(file = 'images\\searchbar.png')
 Label (window,
