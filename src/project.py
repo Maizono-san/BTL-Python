@@ -6,25 +6,25 @@ window = Tk()
 
 window.geometry('950x550')
 window.title("Weather Forecast")
-icon = PhotoImage(file = 'icon.png')
+icon = PhotoImage(file = 'images\\icon.png')
 window.iconphoto(True,icon)
 window.resizable(False,False)
 
 #BackGroundImage
-background = PhotoImage(file = 'background.png')
+background = PhotoImage(file = 'images\\background.png')
 background_image = Label(window,
                          image = background)
 background_image.pack()
 
 #SearchBar
-searchbar = PhotoImage(file = 'searchbar.png')
+searchbar = PhotoImage(file = 'images\\searchbar.png')
 Label (window,
        image = searchbar,
        bg = '#4d99e7'
        ).place(x = 245,y = 4)
 
 #HomeButton
-home = PhotoImage(file = 'home.png')
+home = PhotoImage(file = 'images\\home.png')
 Button (window,
         image = home,
         bg = '#4d99e7',
@@ -34,7 +34,7 @@ Button (window,
 
 
 #SettingButton
-setting = PhotoImage(file = 'setting.png')   
+setting = PhotoImage(file = 'images\\setting.png')   
 Button (window,
         image = setting,
         bg = '#4d99e7',
@@ -43,7 +43,7 @@ Button (window,
         ).place(x = 899,y = 5)
 
 #SearchButton
-search = PhotoImage(file = 'search.png')
+search = PhotoImage(file = 'images\\search.png')
 Button (window,
         image = search,
         bg = '#69adf4',
@@ -63,7 +63,7 @@ Entry  (window,
         ).place(x = 317,y = 12)
 
 #BigBox
-bigbox = PhotoImage(file = 'big.png')
+bigbox = PhotoImage(file = 'images\\big.png')
 bigbox_image = Label(window,
                      image = bigbox,
                      bg = '#4d99e7',
@@ -71,7 +71,7 @@ bigbox_image = Label(window,
 bigbox_image.place(x = 20,y = 390)
 
 #SmallBoxes
-smallbox = PhotoImage(file = 'small.png')
+smallbox = PhotoImage(file = 'images\\small.png')
 Label(window,
       image = smallbox,
       bg = '#4d99e7',
