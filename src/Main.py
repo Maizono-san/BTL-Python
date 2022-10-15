@@ -1,5 +1,5 @@
 from tkinter import *
-
+from PIL import Image,ImageTk,ImageSequence
 
 window = Tk()
 
@@ -9,18 +9,64 @@ icon = PhotoImage(file = 'images\\icon.png')
 window.iconphoto(True,icon)
 window.resizable(False,False)
 
-#BackGroundImage
-background = PhotoImage(file = 'images\\background.png')
-background_image = Label(window,
-                         image = background)
-background_image.pack()
-
-
-
-#BackGroundGif
-# info = Image.open("images\\background.gif")
+#Back_Ground_Gif snow
+# info = Image.open("backgroundGIF\\snow.gif")
 # framnr = info.n_frames
-# frames = [PhotoImage(file="images\\background.gif",
+# frames = [PhotoImage(file="backgroundGIF\\snow.gif",
+#                     format = 'gif -index %i' %(i)) for i in range(framnr)]
+
+# def update(ind):
+#       frame = frames[ind]
+#       ind += 1
+#       if ind > framnr - 1: 
+#          ind = 0
+#       Back_Ground_Gif.configure(image = frame)
+#       window.after(40, update, ind)
+    
+# Back_Ground_Gif = Label(window)
+# Back_Ground_Gif.place(x=0,y=0)
+# window.after(0, update, 0)
+
+#Back_Ground_Gif fog
+# info = Image.open("backgroundGIF\\fog.gif")
+# framnr = info.n_frames
+# frames = [PhotoImage(file="backgroundGIF\\fog.gif",
+#                     format = 'gif -index %i' %(i)) for i in range(framnr)]
+
+# def update(ind):
+#       frame = frames[ind]
+#       ind += 1
+#       if ind > framnr - 1: 
+#          ind = 0
+#       Back_Ground_Gif.configure(image = frame)
+#       window.after(200, update, ind)
+    
+# Back_Ground_Gif = Label(window)
+# Back_Ground_Gif.place(x=0,y=0)
+# window.after(0, update, 0)
+
+#Back_Ground_Gif thunderstorm
+# info = Image.open("backgroundGIF\\thunderstorm.gif")
+# framnr = info.n_frames
+# frames = [PhotoImage(file="backgroundGIF\\thunderstorm.gif",
+#                     format = 'gif -index %i' %(i)) for i in range(framnr)]
+
+# def update(ind):
+#       frame = frames[ind]
+#       ind += 1
+#       if ind > framnr - 1: 
+#          ind = 0
+#       Back_Ground_Gif.configure(image = frame)
+#       window.after(70, update, ind)
+    
+# Back_Ground_Gif = Label(window)
+# Back_Ground_Gif.place(x=0,y=0)
+# window.after(0, update, 0)
+
+#Back_Ground_Gif rain
+# info = Image.open("backgroundGIF\\rain.gif")
+# framnr = info.n_frames
+# frames = [PhotoImage(file="backgroundGIF\\rain.gif",
 #                     format = 'gif -index %i' %(i)) for i in range(framnr)]
 
 # def update(ind):
@@ -32,16 +78,35 @@ background_image.pack()
 #       window.after(50, update, ind)
     
 # Back_Ground_Gif = Label(window)
-# Back_Ground_Gif.pack()
-# window.after(50, update, 0)
+# Back_Ground_Gif.place(x=0,y=0)
+# window.after(0, update, 0)
+
+#Back_Ground_Gif cloud
+info = Image.open("backgroundGIF\\cloud.gif")
+framnr = info.n_frames
+frames = [PhotoImage(file="backgroundGIF\\cloud.gif",
+                    format = 'gif -index %i' %(i)) for i in range(framnr)]
+
+def update(ind):
+      frame = frames[ind]
+      ind += 1
+      if ind > framnr - 1: 
+         ind = 0
+      Back_Ground_Gif.configure(image = frame)
+      window.after(50, update, ind)
+    
+Back_Ground_Gif = Label(window)
+Back_Ground_Gif.place(x=0,y=0)
+window.after(0, update, 0)
+
 
 
 #SearchBar
 searchbar = PhotoImage(file = 'images\\searchbar.png')
 Label (window,
        image = searchbar,
-       bg = '#4d99e7'
-       ).place(x = 245,y = 4)
+       bg = '#4e9ae8'
+       ).place(x = 300,y = 4)
 
 #HomeButton
 home = PhotoImage(file = 'images\\home.png')
